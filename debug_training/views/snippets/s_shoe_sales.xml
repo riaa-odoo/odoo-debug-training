@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_shoe_sales" name="Shoe Sales">
+        <section class="s_shoe_sales">
+            <div class="s_shoe_sales_wrapper text-center"/>
+        </section>
+    </template>
+
+    <template id="shoe_sales_snippet_options" inherit_id="website.snippet_options" name="Shoe Sales Snippet Options">
+        <xpath expr="//*[@t-set='so_content_addition_selector']" position="inside">
+            , .s_shoe_sales
+        </xpath>
+    </template>
+
+    <record id="debug_training.s_shoe_sales_000_js" model="ir.asset">
+        <field name="name">Shoe Sales 000 JS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">debug_training/static/src/snippets/s_shoe_sales/000.js</field>
+    </record>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="shoe_sales_snippet" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_effect']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="debug_training.s_shoe_sales" string="Shoe Sales"
+                t-thumbnail="/debug_training/static/src/img/s_shoe_sales.svg"/>
+        </xpath>
+    </template>
+</odoo>
