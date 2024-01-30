@@ -20,7 +20,7 @@
                                             <br/>
                                             <div>
                                                 Price:
-                                                <span t-field="template.price" t-options="{'widget': 'monetary'}"/>
+                                                <span t-field="template.list_price" t-options="{'widget': 'monetary'}"/>
                                             </div>
                                             <div>
                                                 Price Per Pair:

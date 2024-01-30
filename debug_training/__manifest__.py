@@ -9,9 +9,11 @@
     "license": "OPL-1",
     "author": "RIAA",
     "website": "www.odoo.com",
-    "depends": ["product", "stock", "website"],
+    "depends": ["product", "sale", "stock", "website"],
     "data": [
         "views/debug_training_templates.xml",
         "views/product_template_views.xml",
+        "views/snippets/snippets.xml",
+        "views/snippets/s_shoe_sales.xml",
     ],
 }
