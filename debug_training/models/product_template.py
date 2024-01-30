@@ -29,7 +29,7 @@ class ProductTemplate(models.Model):
 
     @api.depends("pair_per_case", "price_per_pair")
     def _compute_list_price(self):
-        for template in self:
+        for template in self.filtered(lambda t: t.pair_per_case > 0 and t.price_per_pair > 0):
             template.list_price = template.pair_per_case * template.price_per_pair
 
     def _detailed_type_mapping(self):
