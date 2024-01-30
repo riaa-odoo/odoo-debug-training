@@ -9,4 +9,8 @@
     "license": "OPL-1",
     "author": "RIAA",
     "website": "www.odoo.com",
+    "depends": ["product", "stock"],
+    "data": [
+        "views/product_template_views.xml",
+    ],
 }
