@@ -27,7 +27,7 @@ const ShoeSalesWidget = publicWidget.Widget.extend({
         let textWrapper = $("<h3/>").attr({
             class: "s_shoe_sales_text_wrapper o_default_snippet_text",
         });
-        textWrapper.text(`$${vals.sales.toLocaleString()}`);
+        textWrapper.text(`$${vals.total_sales.toLocaleString()}`);
         textWrapper.appendTo(this.$wrapper);
     },
 });
